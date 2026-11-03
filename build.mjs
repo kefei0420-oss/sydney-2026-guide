@@ -2,6 +2,7 @@ import { build } from 'esbuild';
 import { cp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import path from 'node:path';
 import { createRequire } from 'node:module';
+import { createHash } from 'node:crypto';
 import './patch-maplibre.mjs';
 const require = createRequire(import.meta.url);
 const root = process.cwd();
@@ -13,7 +14,7 @@ await cp('static', 'docs', { recursive: true });
 await cp('base.css', 'docs/assets/base.css');
 const result = await build({
   entryPoints: ['main.tsx'], bundle: true, splitting: true, format: 'esm',
-  outdir: 'docs/assets', minify: true, metafile: true, jsx: 'automatic',
+  outdir: 'docs/assets', entryNames: '[name]-[hash]', minify: true, metafile: true, jsx: 'automatic',
   target: 'es2022', define: { 'process.env.NODE_ENV': '"production"' },
   loader: { '.png': 'file', '.svg': 'file' },
   plugins: [{ name: 'static-trip', setup(b) {
@@ -28,6 +29,11 @@ const result = await build({
   } }],
 });
 await writeFile('metafile.json', JSON.stringify(result.metafile, null, 2));
+const [entryFile, entry] = Object.entries(result.metafile.outputs).find(([, output]) => output.entryPoint === 'main.tsx') ?? [];
+if (!entryFile || !entry.cssBundle) throw new Error('Missing guide entry script or stylesheet');
+const scriptUrl = './' + path.relative('docs', entryFile);
+const styleUrl = './' + path.relative('docs', entry.cssBundle);
+const baseVersion = createHash('sha256').update(await readFile('base.css')).digest('hex').slice(0, 12);
 await cp('LICENSE', 'docs/LICENSE');
 await writeFile('docs/.nojekyll', '');
 await writeFile('docs/robots.txt', 'User-agent: *\nDisallow: /\n');
@@ -36,7 +42,7 @@ await writeFile('docs/index.html', `<!doctype html>
 <meta name="robots" content="noindex,nofollow"><meta name="description" content="${htmlEscape(trip.description)}">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>${htmlEscape(trip.title)}</title><link rel="icon" href="./icons/icon.svg">
-<link rel="stylesheet" href="./assets/base.css"><link rel="stylesheet" href="./assets/main.css">
+<link rel="stylesheet" href="./assets/base.css?v=${baseVersion}"><link rel="stylesheet" href="${styleUrl}">
 <style>html,body{height:auto;min-height:100%;overflow:visible}body{overflow-x:clip}</style>
-</head><body><div id="root"></div><script type="module" src="./assets/main.js"></script></body></html>`);
+</head><body><div id="root"></div><script type="module" src="${scriptUrl}"></script></body></html>`);
 console.log('Built standalone guide in docs/');
