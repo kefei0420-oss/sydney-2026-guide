@@ -1,0 +1,1 @@
+import{a as i}from"./chunk-EIA3E4Y3.js";import{c as o}from"./chunk-5TBO732O.js";var l=o(i(),1);var t=new URL("./rtl-text.js",import.meta.url).href;function e(r){try{let a=r();return a instanceof Promise&&a.catch(()=>{}),!0}catch{return!1}}e(()=>l.default.setRTLTextPlugin(t,!0));var b=l.default;export{b as default};
