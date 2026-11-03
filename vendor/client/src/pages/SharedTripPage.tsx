@@ -582,7 +582,7 @@ export default function SharedTripPage() {
                           proportionally and truncate instead. */}
                       <div style={{ flex: '1 1 auto', minWidth: 0 }}>
                         <div
-                          className="text-[#111827]"
+                          className="shared-day-title text-[#111827]"
                           style={{
                             fontSize: 'calc(14px * var(--fs-scale-body, 1))',
                             fontWeight: 600,
@@ -616,7 +616,7 @@ export default function SharedTripPage() {
                       {dayAccs.map((acc: any) => (
                         <span
                           key={acc.id}
-                          className="bg-[#f3f4f6] text-[#6b7280]"
+                          className="shared-stay-chip bg-[#f3f4f6] text-[#6b7280]"
                           style={{
                             fontSize: 'calc(10.5px * var(--fs-scale-caption, 1))',
                             padding: '2px 6px',

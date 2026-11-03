@@ -66,6 +66,8 @@ try {
   assert.ok(await page.locator('.leaflet-overlay-pane path').count(), 'day route line');
   assert.ok(await page.locator('.maplibregl-canvas').count(), 'interactive vector basemap');
   assert.ok(mapResponses.some(u => /\/(?:planet|[0-9]+\/)/.test(u)), 'map tile response');
+  await page.locator('.leaflet-container').scrollIntoViewIfNeeded();
+  await page.waitForTimeout(800);
   await page.screenshot({ path: '/tmp/sydney-guide-desktop.png', fullPage: true });
   await page.getByRole('button', { name: '预订', exact: true }).click();
   const bookings = await page.locator('body').innerText();
@@ -78,6 +80,7 @@ try {
   await page.waitForLoadState('networkidle');
   assert.match(await page.locator('body').innerText(), /Manly/);
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile width');
+  assert.ok(await page.locator('.shared-day-title').evaluateAll(els => els.every(el => el.scrollWidth <= el.clientWidth + 1)), 'mobile day titles readable');
   for (const img of await page.locator('.shared-place-photo').all()) {
     await img.scrollIntoViewIfNeeded(); await img.evaluate(el => el.decode());
     assert.ok(await img.evaluate(el => el.getBoundingClientRect().right <= innerWidth + 1), 'mobile photo width');
