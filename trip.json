@@ -1,8 +1,8 @@
 {
   "trip": {
     "id": 3,
-    "title": "三个人的悉尼夏天",
-    "description": "十二月，去南半球过几天夏天。住在 Darlington 的小屋，坐渡轮去曼利，沿着海岸走到库吉，在岩石区的老街和海港的晚风里消磨时间。六天五晚，三个人，把日子过得松一点。",
+    "title": "悉尼六天五晚",
+    "description": "2026年12月6日至11日，住宿位于悉尼 Darlington。行程包括岩石区、悉尼歌剧院、皇家植物园、曼利海滩、Bondi 至 Coogee 海岸步道、市中心与情人港。市内以公共交通和步行为主，机场往返使用 Uber。",
     "start_date": "2026-12-06",
     "end_date": "2026-12-11",
     "cover_image": "./uploads/places/cover.jpg",
@@ -105,8 +105,8 @@
       "trip_id": 3,
       "day_number": 1,
       "date": "2026-12-06",
-      "notes": "11:05落地悉尼，先把行李送到住处。房东已确认可以寄存，放好就出门；先赶上周末市集，再慢慢逛岩石区。十二月天黑晚，夜景留到晚饭后。",
-      "title": "在老街落脚，等海港亮灯",
+      "notes": "11:05抵达悉尼T3，前往住处寄存行李。房东已确认可寄存。下午游览岩石区周末市集、历史街区和 Dawes Point，晚饭后到环形码头看夜景。",
+      "title": "抵达悉尼｜岩石区、海港大桥",
       "default_transport_mode": "walking"
     },
     {
@@ -114,8 +114,8 @@
       "trip_id": 3,
       "day_number": 2,
       "date": "2026-12-07",
-      "notes": "上午沿歌剧院与植物园的海岸散步，午后换到 Barangaroo 看另一侧的海港。傍晚先吃饭，再上天文台山；今天不必从早到晚一直走。",
-      "title": "白帆、绿荫，和一场迟来的日落",
+      "notes": "上午游览歌剧院外观、皇家植物园及麦考利夫人座椅，下午前往 Barangaroo Reserve，晚饭后到天文台山看日落。",
+      "title": "歌剧院、植物园、Barangaroo、天文台山",
       "default_transport_mode": "walking"
     },
     {
@@ -123,8 +123,8 @@
       "trip_id": 3,
       "day_number": 3,
       "date": "2026-12-08",
-      "notes": "从环形码头上船，在海风里驶向曼利。午饭和海滩都留足时间，回城后去海港北岸，看看月神公园的大笑脸。",
-      "title": "坐一班渡轮，把下午交给海滩",
+      "notes": "从环形码头乘 F1 渡轮前往 Manly，游览 The Corso 和海滩。下午乘船返回，再前往 Milsons Point 与 Luna Park 外观拍照。",
+      "title": "Manly 渡轮、海滩与海港北岸",
       "default_transport_mode": "walking"
     },
     {
@@ -132,8 +132,8 @@
       "trip_id": 3,
       "day_number": 4,
       "date": "2026-12-09",
-      "notes": "Bondi 到 Coogee 单程约6公里。纯步行通常2–3小时，这天留出半天以上，边走边停、吃午饭、看海；累了在 Bronte 收尾也很好。",
-      "title": "沿着太平洋，走过五片海滩",
+      "notes": "Bondi 至 Coogee 单程约6公里，纯步行通常2–3小时。计入拍照、午餐和休息，安排半天以上；短线可在 Bronte 结束。",
+      "title": "Bondi 至 Coogee 海岸徒步",
       "default_transport_mode": "walking"
     },
     {
@@ -141,8 +141,8 @@
       "trip_id": 3,
       "day_number": 5,
       "date": "2026-12-10",
-      "notes": "海德公园和教堂适合慢慢看，午后逛 QVB 与 Pitt Street。把想买的东西集中在今天，晚上去情人港吃饭，等水面映出城市的灯。",
-      "title": "树荫里的城，灯光里的港",
+      "notes": "上午游览海德公园和圣玛丽大教堂，午后逛 QVB、Pitt Street Mall 与 Westfield Sydney，晚上到情人港用餐、看夜景。",
+      "title": "海德公园、QVB、市中心与情人港",
       "default_transport_mode": "walking"
     },
     {
@@ -150,8 +150,8 @@
       "trip_id": 3,
       "day_number": 6,
       "date": "2026-12-11",
-      "notes": "收拾行李，检查证件、充电器和衣柜。13:20从悉尼T2飞黄金海岸，当地13:40落地，家人来接。悉尼比黄金海岸快一小时，飞行不是20分钟。",
-      "title": "吃过早餐，去下一片海",
+      "notes": "Airbnb退房后乘 Uber 前往悉尼机场T2。VA523于13:20起飞，黄金海岸当地13:40抵达，由家人接机。悉尼比黄金海岸快一小时，计划飞行时间约1小时20分钟。",
+      "title": "退房｜悉尼飞黄金海岸",
       "default_transport_mode": "walking"
     }
   ],
@@ -177,7 +177,7 @@
           "place_time": "06:45",
           "end_time": "08:00",
           "duration_minutes": 75,
-          "notes": "建议06:45左右抵达国内航站楼，办理QF513值机、托运和安检。08:30按布里斯班当地时间起飞，登机时间看登机牌。三个人若都有大箱子，去机场叫车时留意车型。\n\n照片：Kgbo · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Skyway_at_Brisbane_Airport_Domestic_Terminal,_2023.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
+          "notes": "建议06:45左右抵达国内航站楼，办理QF513值机、托运和安检。08:30按布里斯班当地时间起飞，登机时间看登机牌。叫车时根据行李数量选择车型。\n\n照片：Kgbo · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Skyway_at_Brisbane_Airport_Domestic_Terminal,_2023.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
           "image_url": "./uploads/places/bne.jpg",
           "website": null,
           "phone": null,
@@ -203,7 +203,7 @@
         "place": {
           "id": 2,
           "trip_id": 3,
-          "name": "悉尼机场 T3 · 夏天到了",
+          "name": "悉尼机场 T3 · 抵达、取行李",
           "description": null,
           "lat": null,
           "lng": null,
@@ -240,7 +240,7 @@
         "place": {
           "id": 3,
           "trip_id": 3,
-          "name": "Darlington 的家 · 放下行李",
+          "name": "Darlington Airbnb · 寄存行李",
           "description": "房源客厅实拍；住宿门牌未在公开网页展示。",
           "lat": null,
           "lng": null,
@@ -277,7 +277,7 @@
         "place": {
           "id": 4,
           "trip_id": 3,
-          "name": "The Rocks Markets · 先逛市集",
+          "name": "The Rocks Markets · 岩石区周末市集",
           "description": null,
           "lat": -33.8589,
           "lng": 151.2084,
@@ -314,7 +314,7 @@
         "place": {
           "id": 5,
           "trip_id": 3,
-          "name": "The Rocks · 在砂岩老街里拐个弯",
+          "name": "The Rocks · 历史街区",
           "description": null,
           "lat": -33.8595,
           "lng": 151.2089,
@@ -351,7 +351,7 @@
         "place": {
           "id": 6,
           "trip_id": 3,
-          "name": "Dawes Point · 站到大桥下面",
+          "name": "Dawes Point · 海港大桥下观景",
           "description": null,
           "lat": -33.8536,
           "lng": 151.2092,
@@ -388,7 +388,7 @@
         "place": {
           "id": 7,
           "trip_id": 3,
-          "name": "Circular Quay · 海港的第一晚",
+          "name": "Circular Quay · 环形码头夜景",
           "description": null,
           "lat": -33.8611,
           "lng": 151.2125,
@@ -427,7 +427,7 @@
         "place": {
           "id": 8,
           "trip_id": 3,
-          "name": "Sydney Opera House · 绕着白帆走一圈",
+          "name": "Sydney Opera House · 悉尼歌剧院外观",
           "description": null,
           "lat": -33.8568,
           "lng": 151.2153,
@@ -464,7 +464,7 @@
         "place": {
           "id": 9,
           "trip_id": 3,
-          "name": "Royal Botanic Garden · 走进树荫里",
+          "name": "Royal Botanic Garden · 皇家植物园",
           "description": null,
           "lat": -33.8642,
           "lng": 151.2166,
@@ -501,7 +501,7 @@
         "place": {
           "id": 10,
           "trip_id": 3,
-          "name": "Mrs Macquarie’s Chair · 白帆与大桥同框",
+          "name": "Mrs Macquarie’s Chair · 麦考利夫人座椅",
           "description": null,
           "lat": -33.8593,
           "lng": 151.2223,
@@ -538,7 +538,7 @@
         "place": {
           "id": 11,
           "trip_id": 3,
-          "name": "Barangaroo Reserve · 换一侧看海港",
+          "name": "Barangaroo Reserve · 海滨公园",
           "description": null,
           "lat": -33.8572,
           "lng": 151.2015,
@@ -575,7 +575,7 @@
         "place": {
           "id": 12,
           "trip_id": 3,
-          "name": "Observatory Hill · 把日落留到八点前",
+          "name": "Observatory Hill · 天文台山日落",
           "description": null,
           "lat": -33.8597,
           "lng": 151.2047,
@@ -651,7 +651,7 @@
         "place": {
           "id": 14,
           "trip_id": 3,
-          "name": "The Corso · 从码头走向海",
+          "name": "The Corso · 曼利步行街",
           "description": null,
           "lat": -33.7991,
           "lng": 151.2869,
@@ -688,7 +688,7 @@
         "place": {
           "id": 15,
           "trip_id": 3,
-          "name": "Manly Beach · 把中午留给海滩",
+          "name": "Manly Beach · 曼利海滩、午餐",
           "description": null,
           "lat": -33.7976,
           "lng": 151.2886,
@@ -725,7 +725,7 @@
         "place": {
           "id": 16,
           "trip_id": 3,
-          "name": "Milsons Point · 海港北岸的另一张明信片",
+          "name": "Milsons Point · 海港北岸观景",
           "description": null,
           "lat": -33.8491,
           "lng": 151.2127,
@@ -762,7 +762,7 @@
         "place": {
           "id": 17,
           "trip_id": 3,
-          "name": "Luna Park · 和大笑脸合影",
+          "name": "Luna Park · 月神公园外观",
           "description": null,
           "lat": -33.8477,
           "lng": 151.21,
@@ -801,7 +801,7 @@
         "place": {
           "id": 18,
           "trip_id": 3,
-          "name": "Bondi Beach · 趁早去看海",
+          "name": "Bondi Beach · 邦迪海滩",
           "description": null,
           "lat": -33.8915,
           "lng": 151.2767,
@@ -838,7 +838,7 @@
         "place": {
           "id": 19,
           "trip_id": 3,
-          "name": "Bondi Icebergs · 只看这一池蓝",
+          "name": "Bondi Icebergs · 海景泳池外观",
           "description": null,
           "lat": -33.8944,
           "lng": 151.2746,
@@ -875,7 +875,7 @@
         "place": {
           "id": 20,
           "trip_id": 3,
-          "name": "Tamarama · 顺着海岸的弯走",
+          "name": "Tamarama Beach · 塔玛拉玛海滩",
           "description": null,
           "lat": -33.8989,
           "lng": 151.2705,
@@ -912,7 +912,7 @@
         "place": {
           "id": 21,
           "trip_id": 3,
-          "name": "Bronte · 吃午饭，也可以在这里收尾",
+          "name": "Bronte Beach · 午餐、短线终点备选",
           "description": null,
           "lat": -33.9033,
           "lng": 151.2685,
@@ -949,7 +949,7 @@
         "place": {
           "id": 22,
           "trip_id": 3,
-          "name": "Clovelly · 走到安静的海湾",
+          "name": "Clovelly · 克洛韦利海湾",
           "description": null,
           "lat": -33.9127,
           "lng": 151.2655,
@@ -986,7 +986,7 @@
         "place": {
           "id": 23,
           "trip_id": 3,
-          "name": "Coogee · 走到这里，就奖励自己一顿",
+          "name": "Coogee Beach · 库吉海滩、返程",
           "description": null,
           "lat": -33.9205,
           "lng": 151.2565,
@@ -997,7 +997,7 @@
           "place_time": "14:45",
           "end_time": "16:00",
           "duration_minutes": 75,
-          "notes": "沿 Gordons Bay 走到 Coogee，找家店喝冷饮、吃点东西，结束今天的海岸线。回 Darlington 坐公共交通，路累了也可以三个人一起叫 Uber。今天不再追加市区景点，回住处洗澡、休息最合适。\n\n照片：Lenny K Photography from Sydney, Australia · CC BY 2.0\n来源：https://commons.wikimedia.org/wiki/File:Coogee_Beach_Sydney_(20571172008).jpg\n许可：https://creativecommons.org/licenses/by/2.0",
+          "notes": "沿 Gordons Bay 走到 Coogee，找家店喝冷饮、吃点东西，结束今天的海岸线。回 Darlington 坐公共交通，也可选择 Uber 返程。今天不再追加市区景点，回住处洗澡、休息最合适。\n\n照片：Lenny K Photography from Sydney, Australia · CC BY 2.0\n来源：https://commons.wikimedia.org/wiki/File:Coogee_Beach_Sydney_(20571172008).jpg\n许可：https://creativecommons.org/licenses/by/2.0",
           "image_url": "./uploads/places/coogee.jpg",
           "website": "https://www.sydney.com/things-to-do/nature-and-parks/walks/bondi-to-coogee-coastal-walk",
           "phone": null,
@@ -1025,7 +1025,7 @@
         "place": {
           "id": 24,
           "trip_id": 3,
-          "name": "Hyde Park · 在树荫下开始一天",
+          "name": "Hyde Park · 海德公园",
           "description": null,
           "lat": -33.8717,
           "lng": 151.2117,
@@ -1062,7 +1062,7 @@
         "place": {
           "id": 25,
           "trip_id": 3,
-          "name": "St Mary’s Cathedral · 推门前先安静下来",
+          "name": "St Mary’s Cathedral · 圣玛丽大教堂",
           "description": null,
           "lat": -33.8711,
           "lng": 151.2133,
@@ -1099,7 +1099,7 @@
         "place": {
           "id": 26,
           "trip_id": 3,
-          "name": "QVB · 把购物也逛成看建筑",
+          "name": "QVB · 维多利亚女王大厦",
           "description": null,
           "lat": -33.8717,
           "lng": 151.2067,
@@ -1136,7 +1136,7 @@
         "place": {
           "id": 27,
           "trip_id": 3,
-          "name": "Pitt Street Mall & Westfield · 留一个购物下午",
+          "name": "Pitt Street Mall & Westfield · 市中心购物",
           "description": null,
           "lat": -33.869,
           "lng": 151.2087,
@@ -1147,7 +1147,7 @@
           "place_time": "13:45",
           "end_time": "16:15",
           "duration_minutes": 150,
-          "notes": "从 QVB 往 Pitt Street Mall 走，和 Westfield 一起逛。三个人不必每家店都同时进去，可以约定一个碰头点，各买各的，再一起喝咖啡。下午买得多就先回住处放东西，晚饭前再出门。\n\n照片：MDRX · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Pitt_Street_Mall_Sydney1.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
+          "notes": "从 QVB 往 Pitt Street Mall 走，和 Westfield 一起逛。可在商场内安排购物和休息。下午买得多就先回住处放东西，晚饭前再出门。\n\n照片：MDRX · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Pitt_Street_Mall_Sydney1.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
           "image_url": "./uploads/places/pitt.jpg",
           "website": "https://www.westfield.com.au/sydney",
           "phone": null,
@@ -1173,7 +1173,7 @@
         "place": {
           "id": 28,
           "trip_id": 3,
-          "name": "Darling Harbour · 最后一晚看水面亮起来",
+          "name": "Darling Harbour · 晚餐、情人港夜景",
           "description": null,
           "lat": -33.8735,
           "lng": 151.2008,
@@ -1212,7 +1212,7 @@
         "place": {
           "id": 29,
           "trip_id": 3,
-          "name": "Darlington · 在住处吃最后一顿早餐",
+          "name": "Darlington Airbnb · 早餐、退房",
           "description": "房源厨房实拍。",
           "lat": null,
           "lng": null,
@@ -1249,7 +1249,7 @@
         "place": {
           "id": 30,
           "trip_id": 3,
-          "name": "悉尼机场 T2 · 这次去黄金海岸",
+          "name": "悉尼机场 T2 · 值机、出发",
           "description": null,
           "lat": null,
           "lng": null,
@@ -1286,7 +1286,7 @@
         "place": {
           "id": 31,
           "trip_id": 3,
-          "name": "黄金海岸机场 T1 · 和家人碰头",
+          "name": "黄金海岸机场 T1 · 家人接机",
           "description": null,
           "lat": null,
           "lng": null,
@@ -1322,7 +1322,7 @@
         "id": 100,
         "trip_id": 3,
         "day_id": 1,
-        "text": "三位成年人各用自己的 Opal、银行卡或手机设备；同一趟进出站使用同一张卡／同一设备，不要三个人轮流刷一张卡。[交通支付说明](https://transportnsw.info/tickets-fares/contactless-payments/contactless-payments-frequently-asked-questions)。",
+        "text": "每人使用自己的 Opal、银行卡或手机设备；同一趟进出站使用同一张卡／同一设备，不要多人共用一张卡。[交通支付说明](https://transportnsw.info/tickets-fares/contactless-payments/contactless-payments-frequently-asked-questions)。",
         "time": null,
         "icon": "🚆",
         "sort_order": 1000,
@@ -1332,7 +1332,7 @@
         "id": 101,
         "trip_id": 3,
         "day_id": 1,
-        "text": "时间表按三人慢慢游览来排，景点时间可前后挪动；航班保留你提供的时刻。住宿门牌和订单信息仅留在你自己的预订里。",
+        "text": "景点游览时段为建议安排，可根据交通和停留时间调整；航班保留你提供的时刻。住宿门牌和订单信息仅留在你自己的预订里。",
         "time": null,
         "icon": "🗓️",
         "sort_order": 1001,
@@ -1424,7 +1424,7 @@
       "place_time": "06:45",
       "end_time": "08:00",
       "duration_minutes": 75,
-      "notes": "建议06:45左右抵达国内航站楼，办理QF513值机、托运和安检。08:30按布里斯班当地时间起飞，登机时间看登机牌。三个人若都有大箱子，去机场叫车时留意车型。\n\n照片：Kgbo · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Skyway_at_Brisbane_Airport_Domestic_Terminal,_2023.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
+      "notes": "建议06:45左右抵达国内航站楼，办理QF513值机、托运和安检。08:30按布里斯班当地时间起飞，登机时间看登机牌。叫车时根据行李数量选择车型。\n\n照片：Kgbo · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Skyway_at_Brisbane_Airport_Domestic_Terminal,_2023.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
       "image_url": "./uploads/places/bne.jpg",
       "website": null,
       "phone": null,
@@ -1436,7 +1436,7 @@
     {
       "id": 2,
       "trip_id": 3,
-      "name": "悉尼机场 T3 · 夏天到了",
+      "name": "悉尼机场 T3 · 抵达、取行李",
       "description": null,
       "lat": null,
       "lng": null,
@@ -1459,7 +1459,7 @@
     {
       "id": 3,
       "trip_id": 3,
-      "name": "Darlington 的家 · 放下行李",
+      "name": "Darlington Airbnb · 寄存行李",
       "description": "房源客厅实拍；住宿门牌未在公开网页展示。",
       "lat": null,
       "lng": null,
@@ -1482,7 +1482,7 @@
     {
       "id": 4,
       "trip_id": 3,
-      "name": "The Rocks Markets · 先逛市集",
+      "name": "The Rocks Markets · 岩石区周末市集",
       "description": null,
       "lat": -33.8589,
       "lng": 151.2084,
@@ -1505,7 +1505,7 @@
     {
       "id": 5,
       "trip_id": 3,
-      "name": "The Rocks · 在砂岩老街里拐个弯",
+      "name": "The Rocks · 历史街区",
       "description": null,
       "lat": -33.8595,
       "lng": 151.2089,
@@ -1528,7 +1528,7 @@
     {
       "id": 6,
       "trip_id": 3,
-      "name": "Dawes Point · 站到大桥下面",
+      "name": "Dawes Point · 海港大桥下观景",
       "description": null,
       "lat": -33.8536,
       "lng": 151.2092,
@@ -1551,7 +1551,7 @@
     {
       "id": 7,
       "trip_id": 3,
-      "name": "Circular Quay · 海港的第一晚",
+      "name": "Circular Quay · 环形码头夜景",
       "description": null,
       "lat": -33.8611,
       "lng": 151.2125,
@@ -1574,7 +1574,7 @@
     {
       "id": 8,
       "trip_id": 3,
-      "name": "Sydney Opera House · 绕着白帆走一圈",
+      "name": "Sydney Opera House · 悉尼歌剧院外观",
       "description": null,
       "lat": -33.8568,
       "lng": 151.2153,
@@ -1597,7 +1597,7 @@
     {
       "id": 9,
       "trip_id": 3,
-      "name": "Royal Botanic Garden · 走进树荫里",
+      "name": "Royal Botanic Garden · 皇家植物园",
       "description": null,
       "lat": -33.8642,
       "lng": 151.2166,
@@ -1620,7 +1620,7 @@
     {
       "id": 10,
       "trip_id": 3,
-      "name": "Mrs Macquarie’s Chair · 白帆与大桥同框",
+      "name": "Mrs Macquarie’s Chair · 麦考利夫人座椅",
       "description": null,
       "lat": -33.8593,
       "lng": 151.2223,
@@ -1643,7 +1643,7 @@
     {
       "id": 11,
       "trip_id": 3,
-      "name": "Barangaroo Reserve · 换一侧看海港",
+      "name": "Barangaroo Reserve · 海滨公园",
       "description": null,
       "lat": -33.8572,
       "lng": 151.2015,
@@ -1666,7 +1666,7 @@
     {
       "id": 12,
       "trip_id": 3,
-      "name": "Observatory Hill · 把日落留到八点前",
+      "name": "Observatory Hill · 天文台山日落",
       "description": null,
       "lat": -33.8597,
       "lng": 151.2047,
@@ -1712,7 +1712,7 @@
     {
       "id": 14,
       "trip_id": 3,
-      "name": "The Corso · 从码头走向海",
+      "name": "The Corso · 曼利步行街",
       "description": null,
       "lat": -33.7991,
       "lng": 151.2869,
@@ -1735,7 +1735,7 @@
     {
       "id": 15,
       "trip_id": 3,
-      "name": "Manly Beach · 把中午留给海滩",
+      "name": "Manly Beach · 曼利海滩、午餐",
       "description": null,
       "lat": -33.7976,
       "lng": 151.2886,
@@ -1758,7 +1758,7 @@
     {
       "id": 16,
       "trip_id": 3,
-      "name": "Milsons Point · 海港北岸的另一张明信片",
+      "name": "Milsons Point · 海港北岸观景",
       "description": null,
       "lat": -33.8491,
       "lng": 151.2127,
@@ -1781,7 +1781,7 @@
     {
       "id": 17,
       "trip_id": 3,
-      "name": "Luna Park · 和大笑脸合影",
+      "name": "Luna Park · 月神公园外观",
       "description": null,
       "lat": -33.8477,
       "lng": 151.21,
@@ -1804,7 +1804,7 @@
     {
       "id": 18,
       "trip_id": 3,
-      "name": "Bondi Beach · 趁早去看海",
+      "name": "Bondi Beach · 邦迪海滩",
       "description": null,
       "lat": -33.8915,
       "lng": 151.2767,
@@ -1827,7 +1827,7 @@
     {
       "id": 19,
       "trip_id": 3,
-      "name": "Bondi Icebergs · 只看这一池蓝",
+      "name": "Bondi Icebergs · 海景泳池外观",
       "description": null,
       "lat": -33.8944,
       "lng": 151.2746,
@@ -1850,7 +1850,7 @@
     {
       "id": 20,
       "trip_id": 3,
-      "name": "Tamarama · 顺着海岸的弯走",
+      "name": "Tamarama Beach · 塔玛拉玛海滩",
       "description": null,
       "lat": -33.8989,
       "lng": 151.2705,
@@ -1873,7 +1873,7 @@
     {
       "id": 21,
       "trip_id": 3,
-      "name": "Bronte · 吃午饭，也可以在这里收尾",
+      "name": "Bronte Beach · 午餐、短线终点备选",
       "description": null,
       "lat": -33.9033,
       "lng": 151.2685,
@@ -1896,7 +1896,7 @@
     {
       "id": 22,
       "trip_id": 3,
-      "name": "Clovelly · 走到安静的海湾",
+      "name": "Clovelly · 克洛韦利海湾",
       "description": null,
       "lat": -33.9127,
       "lng": 151.2655,
@@ -1919,7 +1919,7 @@
     {
       "id": 23,
       "trip_id": 3,
-      "name": "Coogee · 走到这里，就奖励自己一顿",
+      "name": "Coogee Beach · 库吉海滩、返程",
       "description": null,
       "lat": -33.9205,
       "lng": 151.2565,
@@ -1930,7 +1930,7 @@
       "place_time": "14:45",
       "end_time": "16:00",
       "duration_minutes": 75,
-      "notes": "沿 Gordons Bay 走到 Coogee，找家店喝冷饮、吃点东西，结束今天的海岸线。回 Darlington 坐公共交通，路累了也可以三个人一起叫 Uber。今天不再追加市区景点，回住处洗澡、休息最合适。\n\n照片：Lenny K Photography from Sydney, Australia · CC BY 2.0\n来源：https://commons.wikimedia.org/wiki/File:Coogee_Beach_Sydney_(20571172008).jpg\n许可：https://creativecommons.org/licenses/by/2.0",
+      "notes": "沿 Gordons Bay 走到 Coogee，找家店喝冷饮、吃点东西，结束今天的海岸线。回 Darlington 坐公共交通，也可选择 Uber 返程。今天不再追加市区景点，回住处洗澡、休息最合适。\n\n照片：Lenny K Photography from Sydney, Australia · CC BY 2.0\n来源：https://commons.wikimedia.org/wiki/File:Coogee_Beach_Sydney_(20571172008).jpg\n许可：https://creativecommons.org/licenses/by/2.0",
       "image_url": "./uploads/places/coogee.jpg",
       "website": "https://www.sydney.com/things-to-do/nature-and-parks/walks/bondi-to-coogee-coastal-walk",
       "phone": null,
@@ -1942,7 +1942,7 @@
     {
       "id": 24,
       "trip_id": 3,
-      "name": "Hyde Park · 在树荫下开始一天",
+      "name": "Hyde Park · 海德公园",
       "description": null,
       "lat": -33.8717,
       "lng": 151.2117,
@@ -1965,7 +1965,7 @@
     {
       "id": 25,
       "trip_id": 3,
-      "name": "St Mary’s Cathedral · 推门前先安静下来",
+      "name": "St Mary’s Cathedral · 圣玛丽大教堂",
       "description": null,
       "lat": -33.8711,
       "lng": 151.2133,
@@ -1988,7 +1988,7 @@
     {
       "id": 26,
       "trip_id": 3,
-      "name": "QVB · 把购物也逛成看建筑",
+      "name": "QVB · 维多利亚女王大厦",
       "description": null,
       "lat": -33.8717,
       "lng": 151.2067,
@@ -2011,7 +2011,7 @@
     {
       "id": 27,
       "trip_id": 3,
-      "name": "Pitt Street Mall & Westfield · 留一个购物下午",
+      "name": "Pitt Street Mall & Westfield · 市中心购物",
       "description": null,
       "lat": -33.869,
       "lng": 151.2087,
@@ -2022,7 +2022,7 @@
       "place_time": "13:45",
       "end_time": "16:15",
       "duration_minutes": 150,
-      "notes": "从 QVB 往 Pitt Street Mall 走，和 Westfield 一起逛。三个人不必每家店都同时进去，可以约定一个碰头点，各买各的，再一起喝咖啡。下午买得多就先回住处放东西，晚饭前再出门。\n\n照片：MDRX · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Pitt_Street_Mall_Sydney1.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
+      "notes": "从 QVB 往 Pitt Street Mall 走，和 Westfield 一起逛。可在商场内安排购物和休息。下午买得多就先回住处放东西，晚饭前再出门。\n\n照片：MDRX · CC BY-SA 4.0\n来源：https://commons.wikimedia.org/wiki/File:Pitt_Street_Mall_Sydney1.jpg\n许可：https://creativecommons.org/licenses/by-sa/4.0",
       "image_url": "./uploads/places/pitt.jpg",
       "website": "https://www.westfield.com.au/sydney",
       "phone": null,
@@ -2034,7 +2034,7 @@
     {
       "id": 28,
       "trip_id": 3,
-      "name": "Darling Harbour · 最后一晚看水面亮起来",
+      "name": "Darling Harbour · 晚餐、情人港夜景",
       "description": null,
       "lat": -33.8735,
       "lng": 151.2008,
@@ -2057,7 +2057,7 @@
     {
       "id": 29,
       "trip_id": 3,
-      "name": "Darlington · 在住处吃最后一顿早餐",
+      "name": "Darlington Airbnb · 早餐、退房",
       "description": "房源厨房实拍。",
       "lat": null,
       "lng": null,
@@ -2080,7 +2080,7 @@
     {
       "id": 30,
       "trip_id": 3,
-      "name": "悉尼机场 T2 · 这次去黄金海岸",
+      "name": "悉尼机场 T2 · 值机、出发",
       "description": null,
       "lat": null,
       "lng": null,
@@ -2103,7 +2103,7 @@
     {
       "id": 31,
       "trip_id": 3,
-      "name": "黄金海岸机场 T1 · 和家人碰头",
+      "name": "黄金海岸机场 T1 · 家人接机",
       "description": null,
       "lat": null,
       "lng": null,
@@ -2222,7 +2222,7 @@
       "location": "Darlington, Sydney",
       "reservation_time": null,
       "reservation_end_time": null,
-      "notes": "三位成年人。房东已确认到达日可以寄存行李；入住和退房钟点以订单或房东消息为准。三卧室、三张床、两间卫生间，卧室在楼上，楼梯较陡。预订凭证未核验。",
+      "notes": "房东已确认到达日可以寄存行李；入住和退房钟点以订单或房东消息为准。三卧室、三张床、两间卫生间，卧室在楼上，楼梯较陡。预订凭证未核验。",
       "url": "https://www.airbnb.com/rooms/1263474572940188515",
       "metadata": "{}",
       "endpoints": [],
