@@ -9,6 +9,8 @@ assert.ok(script, 'entry script uses a content hash to avoid stale itinerary cac
 assert.ok((await readFile('docs/' + script)).length > 0);
 assert.equal(data.days.length, 6);
 assert.equal(data.reservations.length, 3);
+assert.ok(data.reservations.every(r => r.status === 'confirmed'));
+assert.ok(!JSON.stringify(data).includes('核验'));
 assert.equal(data.places.length, 31);
 assert.equal(data.trip.title, '悉尼六天五晚');
 assert.ok(!data.cartoApiKey);
@@ -77,6 +79,8 @@ try {
   const bookings = await page.locator('body').innerText();
   assert.match(bookings, /QF513/); assert.match(bookings, /VA523/);
   assert.match(bookings, /Darlington Airbnb/);
+  assert.equal(await page.getByText('已确认', { exact: true }).count(), 3);
+  assert.ok(!bookings.includes('待确认'));
   await page.getByRole('button', { name: '计划', exact: true }).click();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.reload({ waitUntil: 'networkidle' });

@@ -8,7 +8,7 @@
 
 验证：`CHROME_PATH="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" npm test`；验证线上可另设 `GUIDE_URL`。
 
-航班时刻与住宿日期来自用户提供的行程，房东已确认到达日可以寄存行李。未读取订单或核验付款状态；不包含门牌号、订单号、凭据和后台接口。地图虚线只表示顺序，不是实际道路或航线。
+两程航班及 Airbnb 住宿均已由用户确认，房东也已确认到达日可以寄存行李。网页不包含门牌号、订单号、凭据和后台接口。地图虚线只表示顺序，不是实际道路或航线。
 
 实景图片已下载到仓库。Wikimedia Commons 图片按各自许可署名，Airbnb 室内照片来自用户指定的公开房源页面，版权归原权利人；网页的「图片来源」和 photo-credits.json 保留来源。代码许可证不适用于照片。
 

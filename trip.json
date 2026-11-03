@@ -1223,7 +1223,7 @@
           "place_time": "08:30",
           "end_time": "10:00",
           "duration_minutes": 90,
-          "notes": "厨房可以简单做早餐，把冰箱里的东西收好，检查各个房间、插座和洗衣机。按房东要求退房、放钥匙；公开页面未核实退房钟点，出发前在订单里确认。今天不再绕去市中心购物。\n\n照片：Airbnb 房源页面／房东提供 · 图片版权归原权利人\n来源：https://www.airbnb.com/rooms/1263474572940188515",
+          "notes": "厨房可以简单做早餐，把冰箱里的东西收好，检查各个房间、插座和洗衣机。按与房东约定的时间退房、交还钥匙。今天不再绕去市中心购物。\n\n照片：Airbnb 房源页面／房东提供 · 图片版权归原权利人\n来源：https://www.airbnb.com/rooms/1263474572940188515",
           "image_url": "./uploads/places/airbnb-kitchen.jpg",
           "website": "https://www.airbnb.com/rooms/1263474572940188515",
           "phone": null,
@@ -1396,18 +1396,7 @@
       }
     ],
     "5": [],
-    "6": [
-      {
-        "id": 600,
-        "trip_id": 3,
-        "day_id": 6,
-        "text": "航班与住宿在“预订”页集中显示；状态待核验只表示这里没有读取你的订单，不代表你没有订好。",
-        "time": null,
-        "icon": "✈️",
-        "sort_order": 1000,
-        "color": null
-      }
-    ]
+    "6": []
   },
   "places": [
     {
@@ -2068,7 +2057,7 @@
       "place_time": "08:30",
       "end_time": "10:00",
       "duration_minutes": 90,
-      "notes": "厨房可以简单做早餐，把冰箱里的东西收好，检查各个房间、插座和洗衣机。按房东要求退房、放钥匙；公开页面未核实退房钟点，出发前在订单里确认。今天不再绕去市中心购物。\n\n照片：Airbnb 房源页面／房东提供 · 图片版权归原权利人\n来源：https://www.airbnb.com/rooms/1263474572940188515",
+      "notes": "厨房可以简单做早餐，把冰箱里的东西收好，检查各个房间、插座和洗衣机。按与房东约定的时间退房、交还钥匙。今天不再绕去市中心购物。\n\n照片：Airbnb 房源页面／房东提供 · 图片版权归原权利人\n来源：https://www.airbnb.com/rooms/1263474572940188515",
       "image_url": "./uploads/places/airbnb-kitchen.jpg",
       "website": "https://www.airbnb.com/rooms/1263474572940188515",
       "phone": null,
@@ -2134,11 +2123,11 @@
       "accommodation_id": null,
       "title": "QF513 · 布里斯班 → 悉尼 T3",
       "type": "flight",
-      "status": "pending",
+      "status": "confirmed",
       "location": "BNE → SYD",
       "reservation_time": "2026-12-06T08:30",
       "reservation_end_time": "2026-12-06T11:05",
-      "notes": "按你提供的航班安排录入，均为各机场当地时间；订单与当日航班动态尚未核验。",
+      "notes": "航班已确认，起飞与抵达时间均为各机场当地时间。",
       "url": null,
       "metadata": "{\"airline\": \"Qantas\", \"flight_number\": \"QF513\", \"departure_airport\": \"BNE\", \"arrival_airport\": \"SYD\"}",
       "endpoints": [
@@ -2176,11 +2165,11 @@
       "accommodation_id": null,
       "title": "VA523 · 悉尼 T2 → 黄金海岸 T1",
       "type": "flight",
-      "status": "pending",
+      "status": "confirmed",
       "location": "SYD → OOL",
       "reservation_time": "2026-12-11T13:20",
       "reservation_end_time": "2026-12-11T13:40",
-      "notes": "按你提供的航班安排录入，均为各机场当地时间；订单与当日航班动态尚未核验。",
+      "notes": "航班已确认，起飞与抵达时间均为各机场当地时间。",
       "url": null,
       "metadata": "{\"airline\": \"Virgin Australia\", \"flight_number\": \"VA523\", \"departure_airport\": \"SYD\", \"arrival_airport\": \"OOL\"}",
       "endpoints": [
@@ -2218,11 +2207,11 @@
       "accommodation_id": "1",
       "title": "Darlington Airbnb · 12月6–11日 · 5晚",
       "type": "hotel",
-      "status": "pending",
+      "status": "confirmed",
       "location": "Darlington, Sydney",
       "reservation_time": null,
       "reservation_end_time": null,
-      "notes": "房东已确认到达日可以寄存行李；入住和退房钟点以订单或房东消息为准。三卧室、三张床、两间卫生间，卧室在楼上，楼梯较陡。预订凭证未核验。",
+      "notes": "房东已确认到达日可以寄存行李；入住和退房钟点以订单或房东消息为准。三卧室、三张床、两间卫生间，卧室在楼上，楼梯较陡。",
       "url": "https://www.airbnb.com/rooms/1263474572940188515",
       "metadata": "{}",
       "endpoints": [],
