@@ -16,6 +16,7 @@ const shared: TranslationStrings = {
   'shared.messages': 'messages',
   'shared.sharedVia': 'Shared via',
   'shared.confirmed': 'Confirmed',
+  'shared.notBooked': 'Not booked',
   'shared.pending': 'Pending',
 };
 export default shared;

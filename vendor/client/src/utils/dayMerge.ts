@@ -219,7 +219,7 @@ export function getTransportForDay(opts: {
   const thisDayOrder = getDayOrder(dayId)
 
   return reservations.filter(r => {
-    if (r.type === 'hotel') return false
+    if (r.type === 'hotel' || r.status === 'not_booked') return false
     if (r.assignment_id && dayAssignmentIds.includes(r.assignment_id)) return false
 
     const startDayId = r.day_id

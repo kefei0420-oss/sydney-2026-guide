@@ -8,8 +8,13 @@ const script = html.match(/<script type="module" src="\.\/(assets\/main-[A-Z0-9]
 assert.ok(script, 'entry script uses a content hash to avoid stale itinerary caches');
 assert.ok((await readFile('docs/' + script)).length > 0);
 assert.equal(data.days.length, 6);
-assert.equal(data.reservations.length, 3);
-assert.ok(data.reservations.every(r => r.status === 'confirmed'));
+assert.equal(data.reservations.length, 5);
+assert.equal(data.reservations.filter(r => r.status === 'confirmed').length, 3);
+assert.equal(data.reservations.filter(r => r.status === 'not_booked').length, 2);
+assert.equal(data.reservations.find(r => r.id === 4).reservation_time, '2026-12-07T11:00');
+assert.equal(data.reservations.find(r => r.id === 5).reservation_time, '2026-12-08');
+assert.equal(data.packing.length, 10);
+assert.ok(!data.packing.some(p => /歌剧院|南线小团/.test(p.name)));
 assert.ok(!JSON.stringify(data).includes('核验'));
 assert.equal(data.places.length, 36);
 assert.equal(data.trip.title, '悉尼六天五晚');
@@ -68,13 +73,14 @@ try {
   for (let i = 0; i < 6; i++) {
     await page.locator('button[aria-pressed]').nth(i + 1).click();
     assert.equal(await page.locator('button[aria-expanded="true"]').count(), 1);
+    if (i === 1 || i === 2) assert.equal(await page.getByText(data.reservations[i - 1].title, { exact: true }).count(), 0, 'unbooked activities are not rendered as booked transport');
     await page.locator('.leaflet-marker-icon').first().waitFor({ state: 'visible', timeout: 10000 });
     for (const img of await page.locator('.shared-place-photo').all()) {
       await img.scrollIntoViewIfNeeded(); await img.evaluate(el => el.decode());
       seenPhotos.add(await img.getAttribute('src'));
     }
     assert.equal(await page.locator('.shared-place-details details[open]').count(), 0);
-    if (i === 0) await page.screenshot({ path: '/tmp/sydney-relaxed-1104/day1.png', fullPage: true });
+    if (i === 0) await page.screenshot({ path: '/tmp/sydney-guide-day1.png', fullPage: true });
     if (i === 0 || i === 5) {
       const hk = i === 0 ? '布里斯班机场 国内航站楼' : '黄金海岸机场 T1';
       await page.locator(`.leaflet-marker-icon[title="${hk}"]`).waitFor();
@@ -106,6 +112,16 @@ try {
   assert.match(bookings, /Darlington Airbnb/);
   assert.equal(await page.getByText('已确认', { exact: true }).count(), 3);
   assert.ok(!bookings.includes('待确认'));
+  assert.equal(await page.getByText('未预订', { exact: true }).count(), 2);
+  assert.match(bookings, /12月7日/); assert.match(bookings, /11:00/);
+  assert.match(bookings, /12月8日/); assert.match(bookings, /南线一日游/);
+  assert.ok(!bookings.includes('00:00'));
+  assert.equal(await page.locator('a[href="https://www.sydneyoperahouse.com/tours/mandarin-tour"]').count(), 1);
+  await page.screenshot({ path: '/tmp/sydney-guide-bookings-desktop.png', fullPage: true });
+  await page.getByRole('button', { name: '行李', exact: true }).click();
+  const packing = await page.locator('body').innerText();
+  assert.ok(!/预订12月7日|确认12月8日/.test(packing));
+  assert.match(packing, /舒服的步行鞋/);
   await page.getByRole('button', { name: '计划', exact: true }).click();
   await page.setViewportSize({ width: 390, height: 844 });
   await page.reload({ waitUntil: 'networkidle' });
@@ -120,8 +136,12 @@ try {
     assert.ok(await img.evaluate(el => el.getBoundingClientRect().right <= innerWidth + 1), 'mobile photo width');
   }
   await page.screenshot({ path: '/tmp/sydney-guide-mobile.png', fullPage: true });
+  await page.getByRole('button', { name: '预订', exact: true }).click();
+  assert.equal(await page.getByText('未预订', { exact: true }).count(), 2);
+  assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile bookings width');
+  await page.screenshot({ path: '/tmp/sydney-guide-bookings-mobile.png', fullPage: true });
   assert.deepEqual(errors, []); assert.deepEqual(badLocal, []); assert.deepEqual(backend, []);
-  console.log('PASS: 6 days, 3 bookings, 36 inline photos, official source links, airport markers, map tiles/routes, mobile width, no backend requests or browser errors.');
+  console.log('PASS: 6 days, 3 confirmed bookings + 2 unbooked activities, 10 packing items, 36 inline photos, official source links, airport markers, map tiles/routes, mobile width, no backend requests or browser errors.');
 } catch (e) {
   console.error({ errors, badLocal, backend, mapResponses: mapResponses.slice(0, 5) });
   if (page) { await page.screenshot({ path: '/tmp/sydney-guide-failure.png', fullPage: true }); console.error((await page.locator('body').innerText()).slice(0, 800)); }

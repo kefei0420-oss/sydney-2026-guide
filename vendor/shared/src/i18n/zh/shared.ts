@@ -16,6 +16,7 @@ const shared: TranslationStrings = {
   'shared.messages': '条消息',
   'shared.sharedVia': '通过以下分享',
   'shared.confirmed': '已确认',
+  'shared.notBooked': '未预订',
   'shared.pending': '待确认',
 };
 export default shared;

@@ -942,7 +942,7 @@ export default function SharedTripPage() {
                       fontWeight: 600,
                     }}
                   >
-                    {r.status === 'confirmed' ? t('shared.confirmed') : t('shared.pending')}
+                    {r.status === 'confirmed' ? t('shared.confirmed') : r.status === 'not_booked' ? t('shared.notBooked') : t('shared.pending')}
                   </span>
                 </div>
               );
