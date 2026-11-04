@@ -11,10 +11,25 @@ assert.equal(data.days.length, 6);
 assert.equal(data.reservations.length, 3);
 assert.ok(data.reservations.every(r => r.status === 'confirmed'));
 assert.ok(!JSON.stringify(data).includes('核验'));
-assert.equal(data.places.length, 31);
+assert.equal(data.places.length, 37);
 assert.equal(data.trip.title, '悉尼六天五晚');
+assert.deepEqual(Object.values(data.assignments).map(stops => stops.length), [9,6,6,6,7,3]);
+assert.equal(data.assignments['2'][0].place.place_time, '11:00');
+assert.match(data.assignments['2'][0].place.notes, /11:00–12:00/);
+assert.match(data.assignments['2'][0].place.notes, /09:45/);
+assert.equal(data.assignments['1'].find(a => a.place.name.startsWith('F4')).place.place_time, '19:42');
+assert.deepEqual(data.assignments['3'].map(a => [a.place.place_time, a.place.end_time]), [['10:30','11:00'],['11:10','12:00'],['13:00','13:30'],['13:40','15:30'],['15:50','16:30'],['17:30','18:30']]);
+assert.ok(data.assignments['4'].at(-1).place.name.startsWith('Coogee'));
+assert.ok(!/短线|提前结束|Barangaroo|天文台山|歌剧院外观/.test(JSON.stringify(data)));
+assert.match(data.assignments['6'][0].place.notes, /10:30–10:45/);
+for (const stops of Object.values(data.assignments)) for (const a of stops) {
+ const canonical = data.places.find(p => p.id === a.place.id);
+ assert.ok(canonical);
+ for (const key of Object.keys(canonical)) assert.deepEqual(a.place[key], canonical[key]);
+}
+
 assert.ok(!data.cartoApiKey);
-assert.equal(data.places.filter(p => p.image_url).length, 31);
+assert.equal(data.places.filter(p => p.image_url).length, 37);
 assert.equal(data.permissions.share_budget, false);
 assert.equal(data.baseCurrency, 'AUD');
 assert.ok(!JSON.stringify(data).includes('39 Thomas'));
@@ -63,15 +78,18 @@ try {
       await page.locator('.leaflet-popup-close-button').click();
     }
   }
-  assert.equal(seenPhotos.size, 31);
+  assert.equal(seenPhotos.size, 37);
   assert.equal(await page.title(), data.trip.title);
-  await page.locator('button[aria-pressed]').nth(3).click();
+  await page.locator('button[aria-pressed]').nth(2).click();
   await page.getByRole('link', { name: '官方行程查询', exact: true }).waitFor();
   await page.waitForLoadState('networkidle');
   assert.match(await page.locator('body').innerText(), /Manly/);
   assert.ok(await page.locator('.leaflet-overlay-pane path').count(), 'day route line');
   assert.ok(await page.locator('.maplibregl-canvas').count(), 'interactive vector basemap');
   assert.ok(mapResponses.some(u => /\/(?:planet|[0-9]+\/)/.test(u)), 'map tile response');
+  for (const img of await page.locator('.shared-place-photo').all()) {
+    await img.scrollIntoViewIfNeeded(); await img.evaluate(el => el.decode());
+  }
   await page.locator('.leaflet-container').scrollIntoViewIfNeeded();
   await page.waitForTimeout(800);
   await page.screenshot({ path: '/tmp/sydney-guide-desktop.png', fullPage: true });
@@ -86,7 +104,7 @@ try {
   await page.reload({ waitUntil: 'networkidle' });
   await page.locator('button[aria-pressed]').nth(3).click();
   await page.waitForLoadState('networkidle');
-  assert.match(await page.locator('body').innerText(), /Manly/);
+  assert.match(await page.locator('body').innerText(), /Kiama/);
   assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'mobile width');
   assert.ok(await page.locator('.shared-day-title').evaluateAll(els => els.every(el => el.scrollWidth <= el.clientWidth + 1)), 'mobile day titles readable');
   for (const img of await page.locator('.shared-place-photo').all()) {
@@ -95,7 +113,7 @@ try {
   }
   await page.screenshot({ path: '/tmp/sydney-guide-mobile.png', fullPage: true });
   assert.deepEqual(errors, []); assert.deepEqual(badLocal, []); assert.deepEqual(backend, []);
-  console.log('PASS: 6 days, 3 bookings, 31 inline photos, official source links, airport markers, map tiles/routes, mobile width, no backend requests or browser errors.');
+  console.log('PASS: 6 days, 3 bookings, 37 inline photos, official source links, airport markers, map tiles/routes, mobile width, no backend requests or browser errors.');
 } catch (e) {
   console.error({ errors, badLocal, backend, mapResponses: mapResponses.slice(0, 5) });
   if (page) { await page.screenshot({ path: '/tmp/sydney-guide-failure.png', fullPage: true }); console.error((await page.locator('body').innerText()).slice(0, 800)); }

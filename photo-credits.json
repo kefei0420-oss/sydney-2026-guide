@@ -54,17 +54,6 @@
     "height": 2455,
     "file": "./uploads/places/dawes-v2.jpg"
   },
-  "quay-night": {
-    "title": "File:Sydney Harbour Bridge from Circular Quay.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Sydney_Harbour_Bridge_from_Circular_Quay.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Sydney_Harbour_Bridge_from_Circular_Quay.jpg/1280px-Sydney_Harbour_Bridge_from_Circular_Quay.jpg",
-    "author": "JJ Harrison (https://www.jjharrison.com.au/)",
-    "license": "CC BY-SA 3.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-    "width": 4832,
-    "height": 2202,
-    "file": "./uploads/places/quay-night.jpg"
-  },
   "opera": {
     "title": "File:Sydney Opera House Day.png",
     "source": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_Day.png",
@@ -97,28 +86,6 @@
     "width": 4452,
     "height": 1381,
     "file": "./uploads/places/chair-v2.jpg"
-  },
-  "barangaroo": {
-    "title": "File:Barangaroo Reserve pano.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Barangaroo_Reserve_pano.jpg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Barangaroo_Reserve_pano.jpg/1280px-Barangaroo_Reserve_pano.jpg",
-    "author": "Dicklyon",
-    "license": "CC BY-SA 4.0",
-    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "width": 4593,
-    "height": 1668,
-    "file": "./uploads/places/barangaroo.jpg"
-  },
-  "observatory": {
-    "title": "File:Sydney Harbour Bridge From The Observatory Hill (28453541).jpeg",
-    "source": "https://commons.wikimedia.org/wiki/File:Sydney_Harbour_Bridge_From_The_Observatory_Hill_(28453541).jpeg",
-    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Sydney_Harbour_Bridge_From_The_Observatory_Hill_%2828453541%29.jpeg/1280px-Sydney_Harbour_Bridge_From_The_Observatory_Hill_%2828453541%29.jpeg",
-    "author": "Mark Bucayan",
-    "license": "CC BY 3.0",
-    "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "width": 1920,
-    "height": 1200,
-    "file": "./uploads/places/observatory.jpg"
   },
   "ferry": {
     "title": "File:Clontarf is one of three Emerald Class Gen 2 ferries built for the F1 Manly service in 2021.jpg",
@@ -346,5 +313,104 @@
     "source": "https://www.airbnb.com/rooms/1263474572940188515",
     "url": "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI2MzQ3NDU3Mjk0MDE4ODUxNQ==/original/6fa3fcf7-43d8-4fb2-8b98-649f4dcf7a68.jpeg?im_w=1200",
     "title": "设施齐全的厨房图片1"
+  },
+  "bald": {
+    "title": "File:Bald Hill view over Stanwell Park, NSW Australia.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Bald_Hill_view_over_Stanwell_Park,_NSW_Australia.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Bald_Hill_view_over_Stanwell_Park%2C_NSW_Australia.JPG/1280px-Bald_Hill_view_over_Stanwell_Park%2C_NSW_Australia.JPG",
+    "author": "Hyme852052",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 5472,
+    "height": 3648,
+    "file": "./uploads/places/bald-20261104.jpg"
+  },
+  "sea-cliff": {
+    "title": "File:Flight Over Sea Cliff Bridge (Unsplash).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Flight_Over_Sea_Cliff_Bridge_(Unsplash).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Flight_Over_Sea_Cliff_Bridge_%28Unsplash%29.jpg/1280px-Flight_Over_Sea_Cliff_Bridge_%28Unsplash%29.jpg",
+    "author": "Benjamin Punzalan benjaminpunzalan",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "width": 2242,
+    "height": 2802,
+    "file": "./uploads/places/sea-cliff-20261104.jpg"
+  },
+  "minnamurra": {
+    "title": "File:Minnamurra River w-sandbank.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Minnamurra_River_w-sandbank.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Minnamurra_River_w-sandbank.jpg/1280px-Minnamurra_River_w-sandbank.jpg",
+    "author": "MrActiniuM",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 4096,
+    "height": 3072,
+    "file": "./uploads/places/minnamurra-20261104.jpg"
+  },
+  "kiama": {
+    "title": "File:Kiama Blowhole in Action.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Kiama_Blowhole_in_Action.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Kiama_Blowhole_in_Action.jpg/1280px-Kiama_Blowhole_in_Action.jpg",
+    "author": "Vuj606",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 5152,
+    "height": 3864,
+    "file": "./uploads/places/kiama-20261104.jpg"
+  },
+  "gerringong": {
+    "title": "File:Gerringong Werri Beach.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gerringong_Werri_Beach.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Gerringong_Werri_Beach.jpg",
+    "author": "Yuanchosaan",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "width": 800,
+    "height": 600,
+    "file": "./uploads/places/gerringong-20261104.jpg"
+  },
+  "valley": {
+    "title": "File:Wombat central (3121248713).jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Wombat_central_(3121248713).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Wombat_central_%283121248713%29.jpg/1280px-Wombat_central_%283121248713%29.jpg",
+    "author": "Phil Whitehouse from London, United Kingdom",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "width": 3648,
+    "height": 2736,
+    "file": "./uploads/places/valley-20261104.jpg"
+  },
+  "kirribilli": {
+    "title": "File:Sydney Opera House from the Kirribilli Lookout, Kirribilli, NSW, 2022 05.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Sydney_Opera_House_from_the_Kirribilli_Lookout,_Kirribilli,_NSW,_2022_05.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Sydney_Opera_House_from_the_Kirribilli_Lookout%2C_Kirribilli%2C_NSW%2C_2022_05.jpg/1280px-Sydney_Opera_House_from_the_Kirribilli_Lookout%2C_Kirribilli%2C_NSW%2C_2022_05.jpg",
+    "author": "Kgbo",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 3767,
+    "height": 2825,
+    "file": "./uploads/places/kirribilli-20261104.jpg"
+  },
+  "quay-station": {
+    "title": "File:Circular Quay railway station, Sydney, 2023, 02.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Circular_Quay_railway_station,_Sydney,_2023,_02.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Circular_Quay_railway_station%2C_Sydney%2C_2023%2C_02.jpg/1280px-Circular_Quay_railway_station%2C_Sydney%2C_2023%2C_02.jpg",
+    "author": "Kgbo",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 4032,
+    "height": 2082,
+    "file": "./uploads/places/quay-station-20261104.jpg"
+  },
+  "f4": {
+    "title": "File:Harbour bridge view from ferry.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Harbour_bridge_view_from_ferry.jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Harbour_bridge_view_from_ferry.jpg/1280px-Harbour_bridge_view_from_ferry.jpg",
+    "author": "RohanDavid",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "width": 4640,
+    "height": 2377,
+    "file": "./uploads/places/f4-20261104.jpg"
   }
 }
